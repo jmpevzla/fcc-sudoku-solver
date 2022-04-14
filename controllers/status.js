@@ -4,6 +4,12 @@ const ValidateStatus = Object.freeze({
     INVALID81: 'INVALID81'
 })
 
+const SolverStatus = Object.freeze({
+    VALID: 'VALID',
+    INVALID: 'INVALID'
+})
+
 module.exports = {
-    ValidateStatus
+    ValidateStatus,
+    SolverStatus
 }
