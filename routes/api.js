@@ -31,10 +31,11 @@ module.exports = function (app) {
     const codeI = 'I'.charCodeAt(0);
     const codeCoordRow = coordinate.charCodeAt(0);
     const row = codeCoordRow - codeA;
-    const col = Number(coordinate[1]) - 1
+    const col = Number(coordinate.substring(1)) - 1
 
     if (codeCoordRow < codeA 
       || codeCoordRow > codeI
+      || isNaN(col)
       || col < 0
       || col > 8) {
       return res.json({ error: 'Invalid coordinate' })

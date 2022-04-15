@@ -293,7 +293,7 @@ suite("Functional Tests", () => {
     test("Check a puzzle placement with invalid placement coordinate: POST request to /api/check", (done) => {
         const data = {
             puzzle: '1.5..2.84..63.12.7.2..5.....9..1....8.2.3674.3.7.2..9.47...8..1..16....926914.37.',
-            coordinate: 'X0',
+            coordinate: 'C12',
             value: 4
         };
         const error = "Invalid coordinate";
